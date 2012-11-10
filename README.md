@@ -3,9 +3,9 @@ TheSleeve
 
 A class project that involves building a website using HTML5 and javascript with a SQL backend implented with Python
 
-<<TODO>>
+<TODO>
   Add todo's to the various elements that need work in them. 
-    This will make it easy for us to figure out what left we have to do with grep '<<TODO>>' .
+    This will make it easy for us to figure out what left we have to do with grep '<TODO>' .
   
   "Front end"  
   Template for homepage
