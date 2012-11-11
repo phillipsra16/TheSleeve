@@ -68,6 +68,7 @@ footer
 {
 	min-width: 600px;
 	margin-top: 25px;
+	color: white;
 }
 #beer_links
 {
@@ -93,7 +94,7 @@ footer
 	margin-left: 25px;
 	color: white;
 }
-#comments
+#comment
 {
 	height: 200px;
 	width: 350px;

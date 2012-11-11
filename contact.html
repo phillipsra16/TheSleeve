@@ -32,12 +32,16 @@
 		</div>
 		<div class="row-fluid">
 			<div class="span10" id="beer_container">
-				<form id="contact"> <!-- make this do something -->
-					<label>E-mail:</label>
-					<input type="text" name="email"><br>
-					<label>Comment:</label>
-					<textarea name="comments" id="comments"></textarea><br>
-					<input type="submit" value="Submit">
+				<h2>Email brewer@thesleeve.com</h2>
+				<form action="MAILTO:phillipsra311@gmail.com" method="post" enctype="text/plain" id="contact">
+					Name:<br>
+					<input type="text" name="name" placeholder="Full Name"><br>
+					E-mail:<br>
+					<input type="text" name="mail" placeholder="example@email.com"><br>
+					Comment:<br>
+					<textarea name="comment" id="comment"></textarea><br><br>
+					<input type="submit" value="Send">
+					<input type="reset" value="Reset">
 				</form>
 			</div>
 		</div> <!-- end .row-fluid -->
