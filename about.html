@@ -5,28 +5,43 @@
 	<meta charset="utf-8">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
 	<script src="bootstrap.min.js"></script>
-	<link href="bootstrap.css" rel="stylesheet">
+	<link href="bootstrap.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top">
-		<div class="navbar-inner">
+	<div id="invis">
+	<div id="main_body">
+	<div class="container-fluid" id="navbar">
+		<div class="navbar navbar-inverse navbar-fixed-top">
+			<div class="navbar-inner">
 			<ul class="nav">
-				<li class="active"><a href="SleeveBrewery.html">Home</a></li>
+				<li><a href="SleeveBrewery.html">Home</a></li>
 				<li class="divider-vertical"></li>
 				<li><a href="beers.html">Our Beers</a></li>
 				<li class="divider-vertical"></li>
-				<li><a href="about.html">About Us</a></li>
+				<li class="active"><a href="about.html">About Us</a></li>
 				<li class="divider-vertical"></li>
 				<li><a href="events.html">Events</a></li>
 				<li class="divider-vertical"></li>
 				<li><a href="contact.html">Contact Us</a></li>
 			</ul>
+			</div>
 		</div>
-	</div>
-	<div class="container">
-		<p>About us goes in here somewhere</p>
-		<footer><p>&copy; The Sleeve Brewing Co. 2012</footer>
+		<div class="header">
+
+		</div>
+		<div class="row-fluid">
+			<div class="span3" id="beer_links">
+
+			</div>
+			<div class="span9" id="beer_container">
+
+			</div>
+		</div> <!-- end .row-fluid -->
+
 	</div><!-- /end .container -->
+	</div><!-- /end #main_body -->
+		<footer><p>&copy; The Sleeve Brewing Co. 2012</footer>
+	</div><!-- /end invis -->
 </body>
 </html>

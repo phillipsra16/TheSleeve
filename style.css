@@ -21,10 +21,6 @@ body{
 {
 	text-align: center;
 }
-#friends
-{
-	
-}
 .blog_entry
 {
 	margin-top: 25px;
@@ -67,7 +63,6 @@ body{
 footer
 {
 	color: white;
-
 }
 #beer_container
 {
@@ -92,4 +87,14 @@ footer
 	background-image: url('old-paper-background.jpg');
 	padding-left: 15px;
 	padding-right: 15px;
+}
+#contact
+{
+	margin-left: 25px;
+	color: white;
+}
+#comments
+{
+	height: 200px;
+	width: 350px;
 }
