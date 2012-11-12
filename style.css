@@ -4,7 +4,7 @@ html
 }
 body{
 	padding-top: 60px;
-	background-image: url('slate.jpg');
+	background-image: url('olive.jpg');
 }
 
 #links
@@ -24,7 +24,6 @@ body{
 .blog_entry
 {
 	margin-top: 25px;
-	margin-left: 25px;
 	border: solid 1px black;
 	border-radius: 5px 5px 5px;
 	background-image: url('old-paper-background.jpg');
@@ -35,9 +34,11 @@ body{
 }
 .header
 {
-	height: 150px;
+	height: 250px;
 	width: 100%;
 	border-bottom: solid 1px black;
+	background-image: url('logo.png');
+	background-repeat: no-repeat;
 }
 .span3 h3
 {
