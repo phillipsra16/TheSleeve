@@ -1,8 +1,10 @@
 <?php
 // web/index.php
 
+// Required for Silex
 require_once __DIR__.'/silex/vendor/autoload.php';
 
+// Create silex instance
 $app = new Silex\Application();
 
 // definitions
@@ -11,7 +13,18 @@ $app['debug'] = true;
 
 // routes
 
+//  /blog route. Returns blogs by date from 3440-Tarrasque
 $app->get ('/blog', function () {
+    $query = "SELECT * FROM Blog_Entries ORDER BY Date desc";
+    $sql = getConnection();
+    $beer_list = $sql->query($query);
+    $beer_array = $beer_list->fetchAll(PDO::FETCH_OBJ);
+    $sql = null;
+    return json_encode($beer_array);
+}); 
+
+//  /beer route. Returns beers by name
+$app->get ('/beer', function () {
     $query = "SELECT * FROM Beer ORDER BY Name desc";
     $sql = getConnection();
     $beer_list = $sql->query($query);
