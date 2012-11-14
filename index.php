@@ -28,7 +28,7 @@ $app->get ('/beer/{season}/{order}', function ($season, $order) {
     // I apologize for doing this procedurally. I am a bad person because of
     // this. I saw doing an ORM as more of a hassle than anything.
     $query = "SELECT * FROM Beer ";
-    $where_clause = "WHERE Season = '".$season."' AND ";
+    $where_clause = "WHERE Season = '".$season."' ";
     $order_clause = "ORDER BY Name ".$order;
     $sql = getConnection();
     $beer_list = $sql->query($query.$where_clause.$order_clause);
