@@ -1,7 +1,7 @@
 TheSleeve
 =========
 
-A class project that involves building a website using HTML5 and javascript with a SQL backend implented with Python
+A class project that involves building a website using HTML5 and javascript with a SQL backend implented with PHP using the Silex micro rest api framework
 
 <TODO>
   Add todo's to the various elements that need work in them. 
@@ -13,4 +13,4 @@ A class project that involves building a website using HTML5 and javascript with
   Logo/colorscheme/CSS
   
   "Back end"
-  Creation and population of mysql db
+  
