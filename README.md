@@ -1,7 +1,14 @@
 TheSleeve
 =========
 
-A class project that involves building a website using HTML5 and javascript with a SQL backend implented with PHP using the Silex micro rest api framework
+A class project that involves building a website for a homebrewery.
+  Tools:
+    -HTML5/CSS
+      -Twitter Bootstrap
+    -Javascript/JQuery
+    -MySQL
+    -PHP
+      -Silex
 
 <TODO>
   Add todo's to the various elements that need work in them. 
@@ -13,4 +20,3 @@ A class project that involves building a website using HTML5 and javascript with
   Logo/colorscheme/CSS
   
   "Back end"
-  
