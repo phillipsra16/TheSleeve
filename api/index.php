@@ -2,7 +2,7 @@
 // web/index.php
 
 // Required for Silex
-require_once __DIR__.'/silex/vendor/autoload.php';
+require_once __DIR__.'/../lib/silex/vendor/autoload.php';
 
 // Create silex instance
 $app = new Silex\Application();

@@ -1,5 +1,18 @@
+/*
+ * This script manages retrieving the blog entries from the api and displaying them
+ *
+ * <TODO> Create an html template and insert blog entries into that template
+ *
+ */
+
+// When doc loads
 $(document).ready(function() {
-blogs = new Array();
+    blogs = new Array(); //Array to store blog entries
+    
+    /* Post an ajax get request to the api. Upon success, execute a callback function
+     * to parse the json, make blog_entry objects out of it, and insert into blogs array.
+     * Upon completion of that, call display_blog_entries method
+     */
     $.ajax({
         type: "GET",
         url: "http://student.cs.appstate.edu/~3440/Sleeve/TheSleeve/api/index.php/blog",
@@ -18,12 +31,14 @@ blogs = new Array();
     });
 });
 
+// Blog_entry class definition
 function blog_entry (date1, name, entry) {
     this.blog_date = date1; //console.log(this.blog_date);
     this.blog_title = name; //console.log(this.blog_name);
     this.blog_entry = entry; //console.log(this.blog_entry);
 }
 
+// Loop over blog entries and call html constructor strings
 function display_blog_entries() {
     console.log(blogs);
     $.each(blogs, function(i, entry) {
@@ -35,6 +50,10 @@ function display_blog_entries() {
     });
 }
 
+
+// For the entry param, create an html string to sensibly display 
+// blog entry title
+// <TODO> Insert into template
 function construct_title(entry) {
     var title = "<p>";
     title += entry.blog_title;
@@ -45,6 +64,9 @@ function construct_title(entry) {
     return title;
 }
 
+// For the entry param, create an html string to sensibly display 
+// blog entry
+// <TODO> Insert into template
 function construct_entry(entry) {
     var blog_post = "<p>";
     blog_post += entry.blog_entry;
