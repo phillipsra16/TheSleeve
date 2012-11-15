@@ -41,12 +41,17 @@ function blog_entry (date1, name, entry) {
 // Loop over blog entries and call html constructor strings
 function display_blog_entries() {
     console.log(blogs);
-    $.each(blogs, function(i, entry) {
-        var title_string = construct_title(entry);
-        var entry_string = construct_entry(entry);
-        //console.log(title_string);
-        $('div .blog_entry').append(title_string);
-        $('div .blog_entry').append(entry_string);
+    // Grab the blog entry template, and call this anonymous method
+    $.get('../html/templates/blog_container.htm', function(template) {
+        var $tpl = $('<div />').html(template); //Make a detached DOM object called $tpl
+        $.each(blogs, function(i, entry) { //For each blogetry
+            var title_string = construct_title(entry); //Construct title string
+            var entry_string = construct_entry(entry); //These will soon be deprecated
+            $tpl.find('.entry_title').html(title_string); //Insert titlestring into entry_title class
+            $tpl.find('.lead').html(entry_string); //Insert entry_string into lead class (lead is a bootstrap thing)
+            $('.blog_entry').append($tpl.html()); //Append that motherfucker
+            console.log(this);
+        });
     });
 }
 
