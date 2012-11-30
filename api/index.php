@@ -23,7 +23,7 @@ $app->get ('/blog', function () {
     return json_encode($beer_array);
 }); 
 
-//  /beer/season/order route. Returns beers by name
+//  /beer route. Returns beers by name
 $app->get ('/beer/{season}/{order}', function ($season, $order) {
     // I apologize for doing this procedurally. I am a bad person because of
     // this. I saw doing an ORM as more of a hassle than anything.
@@ -37,16 +37,6 @@ $app->get ('/beer/{season}/{order}', function ($season, $order) {
     return json_encode($beer_array);
 }); 
 
-//  /beer/id route. Returns beers by name
-$app->get ('/beer/{id}', function ($id) {
-    $query = "SELECT * FROM Beer ";
-    $where_clause = "WHERE id = ".$id;
-    $sql = getConnection();
-    $beer_list = $sql->query($query.$where_clause);
-    $beer_array = $beer_list->fetchAll(PDO::FETCH_OBJ);
-    $sql = null;
-    return json_encode($beer_array);
-}); 
 // Authorization
 
 function getConnection() {

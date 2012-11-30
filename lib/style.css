@@ -69,8 +69,7 @@ footer
 {
 	min-width: 600px;
 	margin-top: 25px;
-	color: black;
-	background-image: url('../img/old-paper-background.jpg');
+	color: white;
 }
 #beer_links
 {
@@ -88,6 +87,7 @@ footer
 	min-width: 350px;
 	border: solid 1px black;
 	border-radius: 5px 5px 5px;
+	background-image: url('../img/old-paper-background.jpg');
 	padding-left: 15px;
 	padding-right: 15px;
 }
